@@ -40,12 +40,12 @@ var loadFile = function(event) {
   <body>
       <br><br>
     <h1>Upload Image</h1>
-    <form method="POST" action="/weather" enctype="multipart/form-data">
+    <form method="POST" action="/currency" enctype="multipart/form-data">
       <p><input type="file"  accept="image/*" name=file   onchange="loadFile(event)"></p>
              <p><img id="output" width="200" /></p>
       <p><input type="submit" value="Submit" class="button"></p>
    
-        {{pred_text_c}}
+       <h2> {{pred_text_c}} </h2>
     </form>
   </body>
 </html>

@@ -80,7 +80,7 @@ def model_predict(img_path, model):
 
 
 def model_predict_c(img_path, model):
-    img = image.load_img(img_path, target_size=(150, 150))
+    img = image.load_img(img_path, target_size=(100, 100))
 
     # Preprocessing the image
     x = image.img_to_array(img)
@@ -278,7 +278,7 @@ def upload3():
         
         result = pred_class[0]
 
-        res = (class_labels_c[result])
+        res = (class_labels_curr[result])
 
  
         return render_template('currency.html',pred_text_c = res) 
