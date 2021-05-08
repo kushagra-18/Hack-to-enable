@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -11,9 +12,16 @@
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
     <link rel="stylesheet" href="{{ url_for('static', filename='css/core-1200px.css') }}">
+    <style>
+        p{
+            width: 900px;
+            align-content: center;
+            
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: #9b59b6">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Blindness Detection Using AI</a>
@@ -25,7 +33,22 @@
     
     <center>
         <br>
-            <img src="https://www.plantandfood.co.nz/growingfutures/images/case-study-grapevine-leafroll-testing-banner.jpg" height = 180/>
+            <img src="{{url_for('static', filename='img/eyes.jpg')}}" height = 160/>
+        <br><br>
+     
+        <i> <h3>Imagine being able to detect blindness before it happened.</h3></i>
+        <br>
+<p>
+Millions of people suffer from diabetic retinopathy, the leading cause of blindness among working aged adults. We hope to detect and prevent this disease among people living in rural areas where medical screening is difficult to conduct. Successful automation to detect this disease will improve the hospital’s ability to identify potential patients.<br>
+
+Currently, technicians travel to these rural areas to capture images and then rely on highly trained doctors to review the images and provide diagnosis. Their goal is to scale their efforts through technology; to gain the ability to automatically screen images for disease and provide information on how severe the condition may be. 
+    </p>
+<h5>And here we present our solution!</h5>    
+      
+        
+        
+        
+        
         
     </center>
     <div class="container">
@@ -37,6 +60,6 @@
     <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>    
 </footer>
     
-   
+    </body>
 
 </html>

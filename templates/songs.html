@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>YOLO-Object Detection</title>
-	<link rel="stylesheet" type="text/css" href="../static/index.css">
+	<title>Songs | Drishya</title>
+	<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/core-1200px.css') }}">
+    <style>
+        p{
+            width: 900px;
+            align-content: center;
+            
+        }
+    </style>
 	<script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -30,6 +40,17 @@
     </style>
 </head>
 <body>
+    
+    
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Soothing Songs for Blinds</a>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><a href="{{url_for('home')}}"> Home </a></button>
+        </div>
+        
+        
+    </nav>
     
     
     

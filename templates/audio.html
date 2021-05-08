@@ -3,6 +3,7 @@
 <head>
 	<title>Audio Book</title>
 	<link rel="stylesheet" type="text/css" href="../static/index.css">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -34,6 +35,14 @@
     
     
 
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Audio Books</a>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><a href="{{url_for('home')}}"> Home </a></button>
+        </div>
+        
+        
+    </nav>
 
 
 <div class='App'>
@@ -42,12 +51,10 @@
             <div>
                 <h1>Helen Keler</h1>
                 <h2>The Story of my Life</h2>
-                <h3>Free Audio Book</h3>
             </div>
         <div>
             <section >
-                
-                
+
                 
 <div class="row">
   <div class="column" style="background-color:#ca6f1e;">
@@ -78,6 +85,13 @@
   </div>
 </div>
                 <br>
+                
+                
+                {% block content %}
+  <audio src="{{ sayit(text='Hello from Flask !')}}"></audio>
+{% endblock %}            
+                    
+                
                 
                                 
 <div class="row">
